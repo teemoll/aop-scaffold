@@ -15,6 +15,9 @@
     <description>aop实现项目脚手架</description>
     <properties>
         <java.version>1.8</java.version>
+        <guava.version>21.0</guava.version>
+        <validation.api.version>1.1.0.Final</validation.api.version>
+        <transmittable.thread.local.version>2.13.0-Beta1</transmittable.thread.local.version>
     </properties>
     <dependencies>
         <dependency>
@@ -22,6 +25,41 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--transmittable-thread-local-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>transmittable-thread-local</artifactId>
+            <version>${transmittable.thread.local.version}</version>
+        </dependency>
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!--apache工具包-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <!--guava-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <!--aop-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>${validation.api.version}</version>
+        </dependency>
+
+        <!--test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
